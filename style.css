@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    color:#444;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    background-color: white;
+    height: 400px;
+    padding: 20px;
+    width:400px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    font-size:36px;
+    margin-bottom: 20px;
+    color: lightpink;
+    font-weight: bold;
+
+}
+input[type="text"]{
+    width: 100%;
+    height: 20%;
+    padding: 6px 12px;
+    border: 1px solid blue;
+    font-size: large;
+    border-radius: 15px;
+    outline: none;
+    transition: background-color 0.3s ease-in;
+
+}
+input[type="text"]:focus{
+    border-color: #9023a4;
+}
+button{
+    cursor: pointer;
+    padding: 10px  20px;
+    background-color:#e91e63;
+    border:none;
+    color: white;
+    transition: background-color 0.3s ease-in;
+  
+}
+button:hover{
+    background-color:#ec27b0;
+}
+#addBtn{
+    position: relative;
+    left: 100px;
+    margin-top: 10px;
+    width: 100px;
+}
+
+ul{
+    font-size: 14px;
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    flex-grow: 1;
+
+
+}
+ul::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+    border-radius: 4px;
+}
+ul::-webkit-scrollbar-thumb:hover{
+    background-color: #999;
+}
+li{
+    background-color:  #f3f3f3;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   word-wrap: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border-left:8px solid #e91e63;
+    transition: background-color 0.3s ease-in;
+   
+
+
+}
+li:hover{
+    background-color: #fceecf;
+    transform:scale(1.02)
+}
+li span{
+    flex-grow:  1;
+    word-wrap: break-word;
+}
+li span.completed {
+    text-decoration: line-through;
+    color:black;
+
+}
+.delete-button{
+    cursor: pointer;
+    padding: 5px;
+    background-color:red;
+    border-radius: 20%;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+
+}
+i{
+    size: 100px;
+}
+.delete-button:hover{
+    background-color: #e64a19;
+}
+#taskList{
+    width: 100%;
+
+    overflow-wrap: break-word;
+}
+#taskList li {
+    width: 100%;
+    overflow-wrap: break-word;
+}
